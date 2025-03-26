@@ -48,53 +48,33 @@ body {
   nav {
     flex-wrap: wrap;
     gap: 15px;
+    padding: 10px 20px;
   }
 
   nav a {
     font-size: 1em;
   }
 
-  /* Banner */
-  .banner {
-    padding: 50px 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  .banner-content {
-    flex-direction: column;
-    text-align: center;
-    padding: 0 20px;
-    gap: 30px;
-  }
-
-  .banner-text {
-    text-align: center;
-  }
-
-  .banner-text h2 {
-    font-size: 2.5em;
-  }
-
-  .banner-image {
-    max-width: 100%;
-  }
-
-  .banner-image img {
-    height: 300px;
-  }
-
   /* Seção de Modelos */
+  .modelos {
+    padding: 40px 20px;
+  }
+
+  .modelos h2 {
+    margin-bottom: 30px;
+  }
+
   .relogio-container {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    gap: 30px;
+    padding: 0 20px;
   }
 
   .relogio-card {
     width: 100%;
     max-width: 300px;
-    margin-bottom: 20px;
+    margin: 0 auto;
   }
 
   /* Seções Sobre e Contato */
@@ -105,9 +85,38 @@ body {
     padding: 40px 20px;
   }
 
-  .sobre p,
-  .contato form {
+  .sobre h2,
+  .contato h2 {
+    margin-bottom: 30px;
+  }
+
+  .sobre p {
+    max-width: 600px;
+    margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .contato form {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contato input,
+  .contato textarea {
+    width: 75%;
+    padding: 6px;
+    font-size: 0.75em;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .contato textarea {
+    height: 80px;
   }
 
   /* Footer */
@@ -116,19 +125,15 @@ body {
     width: 100%;
     padding: 30px 20px;
   }
+
+  .social {
+    gap: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .logo {
     height: 150px;
-  }
-
-  .banner-text h2 {
-    font-size: 2em;
-  }
-
-  .banner-image img {
-    height: 250px;
   }
 
   .modelos h2,
@@ -139,10 +144,41 @@ body {
 
   .relogio-card {
     max-width: 100%;
+    padding: 15px;
+  }
+
+  .relogio-card img {
+    height: 180px;
   }
 
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .social a {
+    font-size: 1.3em;
+  }
+
+  .contato form {
+    max-width: 200px;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .contato input,
+  .contato textarea {
+    width: 70%;
+    padding: 5px;
+    font-size: 0.7em;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .contato textarea {
+    height: 70px;
   }
 }
