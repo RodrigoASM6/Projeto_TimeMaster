@@ -3,75 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TimeMaster - Relógios de Precisão</title>
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/banner.css" />
+    <link rel="stylesheet" href="./CSS/modelos.css" />
+    <link rel="stylesheet" href="./CSS/sobre.css" />
+    <link rel="stylesheet" href="./CSS/contato.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- Cabeçalho -->
     <header>
       <div class="topo">
         <div class="titulo-topo">
-          <h1>TIMEMASTER</h1>
-        </div>
-
-        <div class="subtitulo-topo">
-          <p>Precisão e Elegância</p>
+          <img src="./Imagens/logo.jpg" alt="TimeMaster Logo" class="logo" />
         </div>
       </div>
 
       <nav>
         <a href="#home">Home</a>
-        <a href="modelos">Modelos</a>
+        <a href="#modelos">Modelos</a>
         <a href="#sobre">Sobre</a>
-        <a href="Contato">Contato</a>
+        <a href="#contato">Contato</a>
       </nav>
     </header>
 
-     <!-- Banner Principal -->
-      
-     <section id="home" class="banner">
-        <div class="banner-text">
-            <h2>Descubra a Arte do Tempo</h2>
-            <p>Relógios feitos para durar uma vida inteira.</p>
-            <a href="#modelos" class="btn">Conheça os Modelos</a>
-        </div>
-     </section>
+    <!-- Banner Principal -->
 
-     <section id="modelos" class="modelos">
-      <h2>Nossos Relogios</h2>
+    <section id="home" class="banner">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h2>Descubra a Arte do Tempo</h2>
+          <p>Relógios feitos para durar uma vida inteira.</p>
+          <a href="#modelos" class="btn">Conheça os Modelos</a>
+        </div>
+        <div class="banner-image">
+          <img src="./Imagens/Banner_image.jpg" alt="Relógio TimeMaster" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modelos" class="modelos">
+      <h2>Nossos Relógios</h2>
       <div class="relogio-container">
         <!--modelo 1-->
         <div class="relogio-card">
-          <img src="./Imagens/Relogio1.png" alt="Vintage 1950">
+          <img src="./Imagens/Relogio1.png" alt="Vintage 1950" />
           <h3>Vintage 1950</h3>
           <p>Movimento automático, pulseira de couro italiano.</p>
           <span class="preco">R$ 1.299,00</span>
-          <a href="#" class="btn">Detalhes</a>
+          <a href="#" class="btn"
+            >Comprar <i class="fas fa-shopping-cart"></i
+          ></a>
         </div>
 
-        <div>
-          <!--modelo 2-->
+        <!--modelo 2-->
         <div class="relogio-card">
-          <img src="./Imagens/Relogio2.PNG" alt="Sport Pro">
+          <img src="./Imagens/Relogio2.PNG" alt="Sport Pro" />
           <h3>Sport Pro</h3>
-          <p>Resistente á agua (100m), cronômetro integrado.</p>
+          <p>Resistente água (100m), cronômetro integrado.</p>
           <span class="preco">R$ 1.599,00</span>
-          <a href="#" class="btn">Detalhes</a>
+          <a href="#" class="btn"
+            >Comprar <i class="fas fa-shopping-cart"></i
+          ></a>
         </div>
 
-         <!--modelo 3-->
-         <div class="relogio-card">
-          <img src="./Imagens/Relogio3.PNG" alt="Minimal 2024">
-          <h3>Minimal 2024</h3>
+        <!--modelo 3-->
+        <div class="relogio-card">
+          <img src="./Imagens/Relogio3.PNG" alt="Minimal 2025" />
+          <h3>Minimal 2025</h3>
           <p>Design ultrafino, mostrador minimalista.</p>
           <span class="preco">R$ 899,00</span>
-          <a href="#" class="btn">Detalhes</a>
+          <a href="#" class="btn"
+            >Comprar <i class="fas fa-shopping-cart"></i
+          ></a>
         </div>
-
-
       </div>
+    </section>
 
-     </section>
+    <!-- Sobre a Empresa -->
+    <section id="sobre" class="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        A TimeMaster nasceu da paixão por relógios que unem precisão e design
+        atemporal. Cada peça é cuidadosamente fabricada para oferecer
+        durabilidade e estilo.
+      </p>
+    </section>
 
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu Nome" required />
+        <input type="email" placeholder="Seu E-mail" required />
+        <textarea placeholder="Sua Mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
 
-
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2025 TimeMaster. Todos os direitos reservados.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </footer>
   </body>
 </html>

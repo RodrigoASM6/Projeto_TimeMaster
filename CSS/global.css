@@ -1,0 +1,149 @@
+/* Fomatação padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 50px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Estilo do Botão */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 30px;
+  background-color: #c0a080;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b08f70;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(192, 160, 128, 0.3);
+}
+
+.btn i {
+  font-size: 1.1em;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  /* Header */
+  .logo {
+    height: 200px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  /* Banner */
+  .banner {
+    padding: 50px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .banner-text h2 {
+    font-size: 2.5em;
+  }
+
+  .banner-image {
+    max-width: 100%;
+  }
+
+  .banner-image img {
+    height: 300px;
+  }
+
+  /* Seção de Modelos */
+  .relogio-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .relogio-card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* Seções Sobre e Contato */
+  .sobre,
+  .contato {
+    margin: 30px 0;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .sobre p,
+  .contato form {
+    padding: 0 20px;
+  }
+
+  /* Footer */
+  footer {
+    margin: 30px 0 0;
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 150px;
+  }
+
+  .banner-text h2 {
+    font-size: 2em;
+  }
+
+  .banner-image img {
+    height: 250px;
+  }
+
+  .modelos h2,
+  .sobre h2,
+  .contato h2 {
+    font-size: 2em;
+  }
+
+  .relogio-card {
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

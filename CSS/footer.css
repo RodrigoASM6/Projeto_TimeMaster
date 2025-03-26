@@ -1,0 +1,31 @@
+/* Estilos do Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 0;
+  margin: 50px -50px 0;
+  width: calc(100% + 100px);
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+}
+
+.social a:hover {
+  color: #c0a080;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,73 @@
+/* Estilos da Seção de Contato */
+.contato {
+  padding: 80px 0;
+  background-color: #fff;
+  margin: 50px -50px;
+  width: calc(100% + 100px);
+}
+
+.contato h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 700;
+}
+
+.contato h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c0a080;
+  margin: 15px auto;
+}
+
+.contato form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.contato input,
+.contato textarea {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+  outline: none;
+  border-color: #c0a080;
+  box-shadow: 0 0 0 2px rgba(192, 160, 128, 0.1);
+}
+
+.contato textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contato button {
+  align-self: center;
+  background-color: #c0a080;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contato button:hover {
+  background-color: #b08f70;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(192, 160, 128, 0.3);
+}
