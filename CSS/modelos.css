@@ -23,18 +23,23 @@
 }
 
 .relogio-card {
-  flex: 0 0 250px;
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #e0e0e0;
+  background: #fff;
   border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  flex: 0 0 250px;
 }
 
 .relogio-card:hover {
-  transform: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
 }
 
 .relogio-card img {
@@ -45,22 +50,33 @@
 }
 
 .relogio-card h3 {
-  font-size: 1.2em;
-  color: #1a1a1a;
+  color: #333;
   margin-bottom: 10px;
-  font-weight: 600;
 }
 
 .relogio-card p {
   color: #666;
   margin-bottom: 15px;
-  font-size: 0.9em;
 }
 
 .relogio-card .preco {
   display: block;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.5em;
   color: #c0a080;
   margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.relogio-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c0a080;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.relogio-card .btn:hover {
+  background-color: #a88860;
 }

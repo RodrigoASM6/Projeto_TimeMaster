@@ -23,48 +23,69 @@
       </div>
 
       <nav>
-        <a href="#home">Home</a>
-        <a href="#modelos">Modelos</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#modelos">Modelos</a>
+        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#contato">Contato</a>
       </nav>
     </header>
 
     <section class="produto-detalhes">
-      <div class="produto-galeria">
-        <img src="../Imagens/Relogio1.png" alt="Vintage 1950" class="imagem-principal" />
+      <div class="produto-conteudo">
+        <div class="produto-galeria">
+          <img
+            src="../Imagens/Relogio1.PNG"
+            alt="Vintage 1950"
+            class="imagem-principal"
+          />
 
-        <div class="miniaturas">
-          <img src="../Imagens/Relogio1.png" alt="Vintage 1950 - Vista 1" />
-          <img src="../Imagens/Relogio1.png" alt="Vintage 1950 - Vista 2" />
+          <div class="miniaturas">
+            <img src="../Imagens/Relogio1.PNG" alt="Vintage 1950 - Vista 1" />
+            <img src="../Imagens/Relogio1.PNG" alt="Vintage 1950 - Vista 2" />
+          </div>
+        </div>
+
+        <div class="produto-info">
+          <h2>Vintage 1950</h2>
+          <p class="subtitulo">Elegância Atemporal</p>
+          <p class="preco">R$ 1.499,00</p>
+
+          <div class="especificacoes">
+            <h3>Epecificações Técnicas</h3>
+            <ul>
+              <li>
+                <strong>Movimento:</strong> Quartz japonês (precisão milimétrica)
+              </li>
+              <li><strong>Material:</strong> Aço inoxidável polido espelhado</li>
+              <li><strong>Pulseira:</strong> Malha milanesa ajustável</li>
+              <li><strong>Resistência à água:</strong> 50 metros</li>
+              <li><strong>Garantia:</strong> 2 anos</li>
+            </ul>
+          </div>
+
+          <form class="forma-compra">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" min="1" value="1" />
+
+            <button type="submit" class="btn-comprar">COMPRAR AGORA</button>
+            <button type="button" class="btn-carrinho">
+              Adicionar ao Carrinho
+            </button>
+          </form>
         </div>
       </div>
 
-      <div class="produto-info">
-        <h2>Vintage 1950</h2>
-        <p class="subtitulo">Elegancia Atemporal</p>
-        <p class="preco">R$ 1.299,00</p>
-
-        <div class="especificacoes">
-          <h3>Epecificações Técnicas</h3>
-          <ul>
-            <li><strong>Movimento:</strong> Automático (self-widing)</li>
-            <li><strong>Material:</strong> Aço inoxidável escovado</li>
-            <li><strong>Pulseira:</strong> Couro italiano genuíno</li>
-            <li><strong>Resistência à água:</strong> 50 metros</li>
-            <li><strong>Garantia:</strong> 2 anos</li>
-          </ul>
-        </div>
-
-        <form class="forma-compra">
-          <label for="quantidade">Quantidade</label>
-          <input type="number" id="quantidade" min="1" value="1" />
-
-          <button type="submit" class="btn-comprar">COMPRAR AGORA</button>
-          <button type="button" class="btn-carrinho">
-            Adicionar ao Carrinho
-          </button>
-        </form>
+      <div class="descricao-produto">
+        <h3>Descrição do Produto</h3>
+        <p>
+          O Vintage 1950 é uma homenagem à elegância clássica dos relógios da década de 50. 
+          Seu design atemporal combina elementos vintage com tecnologia moderna, 
+          oferecendo precisão absoluta através do movimento quartz japonês. 
+          A pulseira de couro italiano genuíno e o acabamento premium em aço inoxidável 
+          polido conferem um visual sofisticado e exclusivo. Perfeito para quem 
+          aprecia a beleza atemporal dos relógios clássicos com a precisão da 
+          tecnologia contemporânea.
+        </p>
       </div>
     </section>
 
